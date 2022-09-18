@@ -1,5 +1,18 @@
 <resources>
+    //login details and dashboard
     <string name="app_name">Olexo Gym MAD</string>
     <string name="my_dashboard">My Dashboard</string>
     <string name="User_Name">User Name</string>
+    <string name="password">Password</string>
+
+    //our trainers page
+    <string name="Our_trainers">Our Trainers</string>
+    <string name="Trainer_name">Trainer Name :</string>
+    <string name="Trainer_specialty">Trainer is specialized in :</string>
+    <string name="Specialty01">Trainer is specialised in cardio workout</string>
+    <string name="Specialty02">Trainer is specialised in Weight workout</string>
+    <string name="Specialty03">Trainer is specialised in Boxing</string>
+    <string name="trainer01">Stephen Amell</string>
+    <string name="trainer02">Letty Hensler</string>
+    <string name="trainer03">John Perera</string>
 </resources>
