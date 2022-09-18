@@ -15,4 +15,12 @@
     <string name="trainer01">Stephen Amell</string>
     <string name="trainer02">Letty Hensler</string>
     <string name="trainer03">John Perera</string>
+
+    //Questions page
+    <string name="questiontitle">Questions and Answers</string>
+    <string name="problem">Enter your question here</string>
+    <string name="answers">Answers :</string>
+    <string name="sampleanswer01">Sample Answer 01</string>
+    <string name="sampleanswer02">Sample Answer 02</string>
+    <string name="question">Question 01?</string>
 </resources>

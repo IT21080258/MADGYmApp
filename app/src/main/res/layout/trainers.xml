@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="418dp"
         android:layout_height="150dp"
-        android:background="@drawable/Background"
+        android:background="@color/Gold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-4dp"
         tools:layout_editor_absoluteY="0dp">
@@ -34,23 +34,25 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="740dp"
+        android:layout_width="420dp"
+        android:layout_height="753dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="151dp">
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="143dp">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="-7dp"
+            tools:layout_editor_absoluteY="0dp">
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Trainer_name"
-                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteX="168dp"
                 tools:layout_editor_absoluteY="16dp" />
 
             <TextView
@@ -58,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Trainer_specialty"
-                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteX="168dp"
                 tools:layout_editor_absoluteY="53dp" />
 
             <TextView
@@ -66,7 +68,7 @@
                 android:layout_width="202dp"
                 android:layout_height="42dp"
                 android:text="@string/Specialty02"
-                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteX="195dp"
                 tools:layout_editor_absoluteY="72dp" />
 
             <TextView
@@ -74,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/trainer01"
-                tools:layout_editor_absoluteX="203dp"
+                tools:layout_editor_absoluteX="196dp"
                 tools:layout_editor_absoluteY="35dp" />
 
             <TextView
@@ -82,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/trainer02"
-                tools:layout_editor_absoluteX="201dp"
+                tools:layout_editor_absoluteX="194dp"
                 tools:layout_editor_absoluteY="153dp" />
 
             <TextView
@@ -90,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Trainer_specialty"
-                tools:layout_editor_absoluteX="174dp"
+                tools:layout_editor_absoluteX="167dp"
                 tools:layout_editor_absoluteY="172dp" />
 
             <TextView
@@ -98,7 +100,7 @@
                 android:layout_width="202dp"
                 android:layout_height="42dp"
                 android:text="@string/Specialty01"
-                tools:layout_editor_absoluteX="201dp"
+                tools:layout_editor_absoluteX="194dp"
                 tools:layout_editor_absoluteY="191dp" />
 
             <TextView
@@ -106,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Trainer_name"
-                tools:layout_editor_absoluteX="174dp"
+                tools:layout_editor_absoluteX="167dp"
                 tools:layout_editor_absoluteY="135dp" />
 
             <TextView
@@ -114,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Trainer_name"
-                tools:layout_editor_absoluteX="175dp"
+                tools:layout_editor_absoluteX="168dp"
                 tools:layout_editor_absoluteY="261dp" />
 
             <ImageView
@@ -122,7 +124,7 @@
                 android:layout_width="158dp"
                 android:layout_height="101dp"
                 tools:ignore="ContentDescription"
-                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteX="9dp"
                 tools:layout_editor_absoluteY="261dp"
                 tools:srcCompat="@drawable/trainer03" />
 
@@ -131,7 +133,7 @@
                 android:layout_width="158dp"
                 android:layout_height="101dp"
                 tools:ignore="ContentDescription"
-                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteX="7dp"
                 tools:layout_editor_absoluteY="16dp"
                 tools:srcCompat="@drawable/trainer01" />
 
@@ -140,7 +142,7 @@
                 android:layout_width="158dp"
                 android:layout_height="101dp"
                 tools:ignore="ContentDescription"
-                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteX="7dp"
                 tools:layout_editor_absoluteY="135dp"
                 tools:srcCompat="@drawable/trainer02" />
 
@@ -165,7 +167,7 @@
                 android:layout_width="202dp"
                 android:layout_height="42dp"
                 android:text="@string/Specialty03"
-                tools:layout_editor_absoluteX="203dp"
+                tools:layout_editor_absoluteX="196dp"
                 tools:layout_editor_absoluteY="317dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
