@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Olexo Gym MAD</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="User_Name">User Name</string>
 </resources>
