@@ -11,7 +11,8 @@
         android:layout_height="328dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-1dp"
-        android:background="@color/Gold">
+        android:background="@color/Gold"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -19,7 +20,8 @@
             android:layout_height="241dp"
             tools:layout_editor_absoluteX="729dp"
             tools:layout_editor_absoluteY="58dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView5"
@@ -28,7 +30,8 @@
             android:text="@string/my_dashboard"
             android:textSize="36dp"
             tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="89dp" />
+            tools:layout_editor_absoluteY="89dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView6"
@@ -37,7 +40,8 @@
             android:text="@string/User_Name"
             android:textSize="26dp"
             tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="147dp" />
+            tools:layout_editor_absoluteY="147dp"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button7"
@@ -45,7 +49,8 @@
             android:layout_height="65dp"
             android:text="Logout"
             tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="214dp" />
+            tools:layout_editor_absoluteY="214dp"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
@@ -54,7 +59,8 @@
         android:layout_height="74dp"
         android:text="My exercises"
         tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="411dp" />
+        tools:layout_editor_absoluteY="411dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button5"
@@ -62,7 +68,8 @@
         android:layout_height="74dp"
         android:text="Trainers"
         tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="655dp" />
+        tools:layout_editor_absoluteY="655dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button6"
@@ -70,7 +77,8 @@
         android:layout_height="74dp"
         android:text="My Membership"
         tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="773dp" />
+        tools:layout_editor_absoluteY="773dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button9"
@@ -78,7 +86,8 @@
         android:layout_height="74dp"
         android:text="Questions"
         tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="900dp" />
+        tools:layout_editor_absoluteY="900dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button4"
@@ -86,7 +95,8 @@
         android:layout_height="74dp"
         android:text="My Bookings"
         tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="532dp" />
+        tools:layout_editor_absoluteY="532dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
