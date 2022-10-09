@@ -13,7 +13,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/profPic"
             android:layout_width="121dp"
             android:layout_height="102dp"
             tools:ignore="ContentDescription"
@@ -29,48 +29,22 @@
             android:textSize="28sp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="34dp" />
+            tools:layout_editor_absoluteY="45dp" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/User_Name"
             android:textSize="16sp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="72dp" />
+            tools:layout_editor_absoluteY="84dp" />
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="99dp"
-            android:layout_height="36dp"
-            android:text="@string/logout"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="112dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="My exercises"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="400dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Trainers"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="500dp" />
-
-    <Button
-        android:id="@+id/button6"
+        android:id="@+id/Membership"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="My Membership"
@@ -79,16 +53,7 @@
         tools:layout_editor_absoluteY="200dp" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Other Activities"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="600dp" />
-
-    <Button
-        android:id="@+id/button4"
+        android:id="@+id/Booking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="My Bookings"
@@ -96,8 +61,40 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="300dp" />
 
+
+    <Button
+        android:id="@+id/Exercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My exercises"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/Trainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trainers"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+
+
+    <Button
+        android:id="@+id/Other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Activities"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+
+
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/Dumbell"
         android:layout_width="100dp"
         android:layout_height="96dp"
         tools:layout_editor_absoluteX="259dp"

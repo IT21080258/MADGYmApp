@@ -1,11 +1,10 @@
 <resources>
-    //login details and dashboard
+    //dashboard
     <string name="app_name">Olexo Gym MAD</string>
     <string name="my_dashboard">My Dashboard</string>
-    <string name="User_Name">User Name</string>
-    <string name="password">Password</string>
 
-    //our trainers page
+
+    //trainers
     <string name="Our_trainers">Our Trainers</string>
     <string name="Trainer_name">Trainer Name :</string>
     <string name="Trainer_specialty">Trainer is specialized in :</string>
@@ -16,14 +15,13 @@
     <string name="trainer02">Letty Hensler</string>
     <string name="trainer03">John Perera</string>
 
-    //Other Activities page
-    <string name="questiontitle">Questions and Answers</string>
-    <string name="problem">Enter your question here</string>
-    <string name="answers">Answers :</string>
-    <string name="sampleanswer01">Sample Answer 01</string>
-    <string name="sampleanswer02">Sample Answer 02</string>
-    <string name="question">Question 01?</string>
-    <string name="title_activity_login">login</string>
+    //Signup and login
+
+    <string name="uName">User Name: </string>
+    <string name="Password">Password: </string>
+    <string name="confirm">Confirm password: </string>
+    <string name="sign">Signup</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
