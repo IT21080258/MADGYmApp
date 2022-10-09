@@ -14,14 +14,6 @@
         tools:layout_editor_absoluteY="68dp"
         tools:srcCompat="@drawable/logo" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="16dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="496dp"
-        tools:ignore="MissingConstraints" />
-
     <EditText
         android:id="@+id/uNameLog"
         android:layout_width="wrap_content"
@@ -30,7 +22,7 @@
         android:inputType="textPersonName"
         tools:ignore="Autofill,LabelFor,MissingConstraints"
         tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="359dp" />
+        tools:layout_editor_absoluteY="360dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -39,7 +31,7 @@
         android:text="User Name :"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="340dp" />
+        tools:layout_editor_absoluteY="341dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -48,7 +40,7 @@
         android:text="Password :"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="465dp" />
+        tools:layout_editor_absoluteY="461dp" />
 
     <EditText
         android:id="@+id/uPasswordLog"
@@ -58,7 +50,7 @@
         android:inputType="textPassword"
         tools:ignore="Autofill,LabelFor,MissingConstraints"
         tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="484dp" />
+        tools:layout_editor_absoluteY="480dp" />
 
     <Button
         android:id="@+id/loginBtn"
@@ -67,7 +59,7 @@
         android:text="Login"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="604dp" />
+        tools:layout_editor_absoluteY="600dp" />
 
     <Button
         android:id="@+id/registerBtn"
@@ -75,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="Register"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="704dp" />
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="700dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
