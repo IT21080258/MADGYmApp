@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OlexoGymMAD"
         tools:targetApi="31">
+        <!--app will load into login activity-->
         <activity
             android:name=".login"
             android:exported="true" >
