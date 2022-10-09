@@ -15,6 +15,7 @@ public class login extends AppCompatActivity {
     EditText username, password;
     Button loginBtn, registerBtn;
     DBHelper DB;
+    SessionManager sessionManager;
 
 
     @Override
@@ -39,6 +40,7 @@ public class login extends AppCompatActivity {
                 else{
                     Boolean userPass = DB.checkUserDetails(user,pass);
                     if (userPass == true){
+                        sessionManager.createLoginSession(user,pass);
                         Toast.makeText(login.this,"Login Successful",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                         startActivity(intent);
