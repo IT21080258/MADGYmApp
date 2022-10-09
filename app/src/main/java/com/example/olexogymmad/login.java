@@ -7,13 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class login extends AppCompatActivity {
 
     EditText username, password;
-    Button loginBtn;
+    Button loginBtn, registerBtn;
     DBHelper DB;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class login extends AppCompatActivity {
         username = (EditText) findViewById(R.id.uNameLog);
         password = (EditText) findViewById(R.id.uPasswordLog);
         loginBtn = (Button) findViewById(R.id.loginBtn);
+        registerBtn = (Button) findViewById(R.id.registerBtn);
         DB = new DBHelper(this);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +47,13 @@ public class login extends AppCompatActivity {
                         Toast.makeText(login.this,"Username or Password doesn't match",Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+
+        });
+        registerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),signup.class);
             }
         });
     }

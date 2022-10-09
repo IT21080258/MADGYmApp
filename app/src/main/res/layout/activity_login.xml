@@ -15,16 +15,6 @@
         tools:srcCompat="@drawable/logo" />
 
 
-
-    <TextView
-        android:id="@+id/signupTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't have an account? Signup here"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="747dp" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="16dp"
         android:layout_height="wrap_content"
@@ -78,5 +68,14 @@
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="604dp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="704dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
