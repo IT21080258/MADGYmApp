@@ -4,6 +4,199 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".otherActivities">
+    tools:ignore="ExtraText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="392dp"
+        android:layout_height="154dp"
+        android:background="@color/Gold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="158dp"
+            android:layout_height="101dp"
+            tools:ignore="ContentDescription"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/Trainers01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activities"
+            android:textColor="@color/Blue_001"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="117dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    //Yoga
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/time_Yoga"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <Button
+        android:id="@+id/yogaAddBtn"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="268dp" />
+
+    //Boxing
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="391dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/yogaAddBtn"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boxing"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/divider4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/yoga"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/zumba"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/divider5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/day_friday"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/day_tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <Button
+        android:id="@+id/boxingAddButton"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="@string/add"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="268dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/time_Boxing"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="391dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/boxingAddButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+    //Zumba
+
+    <Button
+        android:id="@+id/zumbaAddBtn"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="@string/add"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="268dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/day_friday"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/time_zumba"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="391dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/zumbaAddBtn"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+    <Button
+        android:id="@+id/showAct"
+        android:layout_width="395dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/myActs"
+        app:layout_constraintTop_toBottomOf="@+id/divider6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import java.util.HashMap;
 
 public class SessionManager {
 
+
     SharedPreferences pref;
 
     SharedPreferences.Editor editor;
@@ -46,7 +47,7 @@ public class SessionManager {
     }
 
     public void checkLogin(){
-        if(!this.isLoggedIn()){
+        if(!this.isLoggedIn()==false){
             Intent intent = new Intent(_context, login.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -64,6 +65,15 @@ public class SessionManager {
 
         return user;
     }
+    
+    public static String getUserName(){
+
+        String userName = KEY_USER;
+
+        return userName;
+    }
+
+    
 
     public void logoutUser(){
         editor.clear();
@@ -72,6 +82,7 @@ public class SessionManager {
         Intent i = new Intent(_context, login.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
 
         _context.startActivity(i);
     }

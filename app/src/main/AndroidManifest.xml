@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OlexoGymMAD"
         tools:targetApi="31">
+
+        <meta-data
+            android:value="ca-app-pub-3940256099942544~3347511713"
+            android:name="com.google.android.gms.ads.APPLICATION_ID"/>
+
         <!--app will load into login activity-->
         <activity
             android:name=".login"

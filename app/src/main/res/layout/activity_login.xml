@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,27 +21,29 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="Autofill,LabelFor,MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="360dp" />
+        tools:layout_editor_absoluteX="91dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:text="User Name :"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="341dp" />
+        tools:layout_editor_absoluteX="91dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
         android:text="Password :"
+        app:layout_constraintTop_toBottomOf="@+id/uNameLog"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="461dp" />
+        tools:layout_editor_absoluteX="91dp" />
 
     <EditText
         android:id="@+id/uPasswordLog"
@@ -48,26 +51,27 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="Autofill,LabelFor,MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="480dp" />
+        tools:layout_editor_absoluteX="91dp" />
 
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
+        app:layout_constraintTop_toBottomOf="@+id/uPasswordLog"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="600dp" />
+        tools:layout_editor_absoluteX="152dp" />
 
     <Button
         android:id="@+id/registerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:text="Register"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="700dp" />
+        tools:layout_editor_absoluteX="142dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

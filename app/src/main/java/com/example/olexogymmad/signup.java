@@ -40,8 +40,8 @@ public class signup extends AppCompatActivity {
                         if (checkUser == false){
                             Boolean insert = DB.insertUserData(user,pass);
                             if (insert == true){
-                                Toast.makeText(signup.this,"Registered Successfully",Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                Toast.makeText(signup.this,"Registered Successfully, Please login",Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(),login.class);
                                 startActivity(intent);
                             }
                             else{
