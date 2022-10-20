@@ -40,15 +40,15 @@ public class otherActivities extends AppCompatActivity{
                 Boolean chkAct = db.checkActivity(activity);
                     if (chkAct == false){
                         Boolean insertAct = db.insertActivity(activity,Day,Time);
-                        if (insertAct == true){
-                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_LONG);
+                        if (insertAct == false){
+                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT);
                         }
                         else{
-                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_LONG);
+                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT);
                         }
                     }
                     else {
-                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_LONG);
+                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT);
                     }
             }
 
@@ -93,14 +93,14 @@ public class otherActivities extends AppCompatActivity{
                     if (chkAct == false){
                         Boolean insertAct = db.insertActivity(activity,Day,Time);
                         if (insertAct == true){
-                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_LONG);
+                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT);
                         }
                         else{
-                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_LONG);
+                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT);
                         }
                     }
                     else {
-                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_LONG);
+                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT);
                     }
             }
 
