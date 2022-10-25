@@ -1,0 +1,46 @@
+<resources>
+    //dashboard
+    <string name="app_name">Olexo Gym MAD</string>
+    <string name="my_dashboard">My Dashboard</string>
+
+
+    //trainers
+    <string name="Our_trainers">Our Trainers</string>
+    <string name="Trainer_name">Trainer Name :</string>
+    <string name="Trainer_specialty">Trainer is specialized in :</string>
+    <string name="Specialty01">Trainer is specialised in cardio workout</string>
+    <string name="Specialty02">Trainer is specialised in Weight workout</string>
+    <string name="Specialty03">Trainer is specialised in Boxing</string>
+    <string name="trainer01">Stephen Amell</string>
+    <string name="trainer02">Letty Hensler</string>
+    <string name="trainer03">John Perera</string>
+
+    //Signup and login
+
+    <string name="uName">User Name: </string>
+    <string name="Password">Password: </string>
+    <string name="confirm">Confirm password: </string>
+    <string name="sign">Signup</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_trainers">trainers</string>
+    <string name="logout">Logout</string>
+    <string name="myActs">My Activities</string>
+    <string name="activities">Activities</string>
+    <string name="add">Add</string>
+    <string name="yoga">Yoga:</string>
+    <string name="day_tuesday">Day : Tuesday</string>
+    <string name="time_Yoga">Time : 0500 - 0600</string>
+    <string name="time_Boxing">Time : 1800 - 1930</string>
+    <string name="boxing">Boxing:</string>
+    <string name="day_friday">Day : Friday</string>
+    <string name="zumba">Zumba</string>
+    <string name="time_zumba">time : 1700 - 1800</string>
+</resources>
