@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.Toast;
 
@@ -15,6 +16,7 @@ public class otherActivities extends AppCompatActivity{
     Button yogaAddBtn, boxingAddBtn, zumbaAddBtn, showAct;
     SessionManager sessionManager;
     DBHelper db;
+    ImageView logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class otherActivities extends AppCompatActivity{
         boxingAddBtn = (Button) findViewById(R.id.boxingAddButton);
         zumbaAddBtn = (Button) findViewById(R.id.zumbaAddBtn);
         showAct = (Button) findViewById(R.id.showAct);
+        logo = (ImageView) findViewById(R.id.logo);
 
         db = new DBHelper(this);
 
@@ -41,14 +44,14 @@ public class otherActivities extends AppCompatActivity{
                     if (chkAct == false){
                         Boolean insertAct = db.insertActivity(activity,Day,Time);
                         if (insertAct == false){
-                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT);
+                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT).show();
                         }
                         else{
-                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT);
+                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT).show();
                         }
                     }
                     else {
-                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT);
+                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT).show();
                     }
             }
 
@@ -65,14 +68,14 @@ public class otherActivities extends AppCompatActivity{
                     if (chkAct == false){
                         Boolean insertAct = db.insertActivity(activity,Day,Time);
                         if (insertAct == true){
-                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT);
+                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT).show();
                         }
                         else{
-                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT);
+                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT).show();
                         }
                     }
                     else {
-                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT);
+                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT).show();
                     }
             }
 
@@ -93,18 +96,24 @@ public class otherActivities extends AppCompatActivity{
                     if (chkAct == false){
                         Boolean insertAct = db.insertActivity(activity,Day,Time);
                         if (insertAct == true){
-                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT);
+                            Toast.makeText(otherActivities.this,"Successfully booked activity",Toast.LENGTH_SHORT).show();
                         }
                         else{
-                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT);
+                            Toast.makeText(otherActivities.this,"Error booking activity",Toast.LENGTH_SHORT).show();
                         }
                     }
                     else {
-                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT);
+                        Toast.makeText(otherActivities.this,"You have already booked this activity",Toast.LENGTH_SHORT).show();
                     }
             }
 
         });
+       showAct.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               startActivity(new Intent(otherActivities.this, otherActivitiesList.class));
+           }
+       });
     }
 }
 

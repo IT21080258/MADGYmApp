@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Gold">#FF8B61</color>
     <color name="Blue_001">#18288D</color>
+    <color name="Grey">#efefef</color>
+    <color name="crimson">#DC143C</color>
+    <color name="lightcoral">#F08080</color>
 </resources>

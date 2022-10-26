@@ -19,7 +19,7 @@
             tools:ignore="ContentDescription"
             tools:layout_editor_absoluteX="130dp"
             tools:layout_editor_absoluteY="16dp"
-            tools:srcCompat="@drawable/logo" />
+            android:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/Trainers01"

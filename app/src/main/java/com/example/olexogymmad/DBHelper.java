@@ -57,6 +57,8 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+
+    ////////////////Activity starts here
     public boolean insertActivity(String Activity, String Day, String Time){
         SQLiteDatabase gymDB = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -78,5 +80,21 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+    public boolean checkActivityLimit(){
+        SQLiteDatabase gymDB = this.getWritableDatabase();
+        Cursor cursor = gymDB.rawQuery("select * from Activity where activityDes = ?",null);
+        if(cursor.getCount()>2)
+            return true;
+        else
+            return false;
+    }
+
+    public Cursor getActData(){
+        SQLiteDatabase gymDB = getWritableDatabase();
+        Cursor act = gymDB.rawQuery("Select * from Activity",null);
+        return act;
+    }
+
+
 
 }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class signup extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class signup extends AppCompatActivity {
     EditText userName, Password, rePassword;
     Button signup;
     DBHelper DB;
+    ImageView logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class signup extends AppCompatActivity {
         rePassword = (EditText) findViewById(R.id.rePassword);
         signup = (Button) findViewById(R.id.signupBtn);
         DB = new DBHelper(this);
+        logo = (ImageView) findViewById(R.id.logo);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

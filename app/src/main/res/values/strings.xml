@@ -43,4 +43,9 @@
     <string name="day_friday">Day : Friday</string>
     <string name="zumba">Zumba</string>
     <string name="time_zumba">time : 1700 - 1800</string>
+    <string name="my_activities">My Activities</string>
+    <string name="activity">Activity:</string>
+    <string name="day">Day:</string>
+    <string name="time">Time:</string>
+    <string name="delete">Delete</string>
 </resources>

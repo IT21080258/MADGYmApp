@@ -13,15 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OlexoGymMAD"
         tools:targetApi="31">
+        <activity
+            android:name=".otherActivitiesList"
+            android:exported="false" />
 
         <meta-data
-            android:value="ca-app-pub-3940256099942544~3347511713"
-            android:name="com.google.android.gms.ads.APPLICATION_ID"/>
-
-        <!--app will load into login activity-->
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" /> <!-- app will load into login activity -->
         <activity
             android:name=".login"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,9 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
-
-
+            android:exported="true" />
     </application>
 
 </manifest>
