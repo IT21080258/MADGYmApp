@@ -19,20 +19,22 @@
             android:id="@+id/logo"
             android:layout_width="158dp"
             android:layout_height="101dp"
+            android:layout_marginStart="119dp"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="ContentDescription"
-            tools:layout_editor_absoluteX="119dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:src="@drawable/logo" />
+            tools:layout_editor_absoluteY="16dp" />
 
         <TextView
             android:id="@+id/Trainers01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
             android:text="@string/my_activities"
             android:textColor="@color/Blue_001"
             android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/logo"
-            tools:layout_editor_absoluteX="140dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -95,6 +95,29 @@ public class DBHelper extends SQLiteOpenHelper {
         return act;
     }
 
+    public Boolean deleteActivityData(String Act)
+    {
+        SQLiteDatabase gymDB = this.getWritableDatabase();
+        Cursor cursor = gymDB.rawQuery("Select * from Activity where activityDes = ?", new String[]{Act});
+        if(cursor.getCount()>0)
+        {
+            long result = gymDB.delete("Activity", "activityDes=?", new String[]{Act});
+            if(result==-1)
+            {
+                return  false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
 
 
 }

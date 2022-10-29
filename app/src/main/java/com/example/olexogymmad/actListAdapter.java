@@ -1,11 +1,13 @@
 package com.example.olexogymmad;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,16 +35,24 @@ public class actListAdapter extends RecyclerView.Adapter<actListAdapter.paymentV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull actListAdapter.paymentViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull actListAdapter.paymentViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.activity.setText(String.valueOf(act_id.get(position)));
         holder.day.setText(String.valueOf(day_id.get(position)));
         holder.time.setText(String.valueOf(time_id.get(position)));
+        String act = String.valueOf(act_id.get(position));
         //delete button
         holder.delete.setOnClickListener(new View.OnClickListener() {
-
+        DBHelper db = new DBHelper(context);
             @Override
             public void onClick(View view) {
-
+                Boolean deleteAct = db.deleteActivityData(act);
+                if (deleteAct == true) {
+                    Toast.makeText(context, "Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    act_id.remove(position);
+                    notifyDataSetChanged ();
+                }
+                else
+                    Toast.makeText(context, "Failed to delete", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -50,7 +60,6 @@ public class actListAdapter extends RecyclerView.Adapter<actListAdapter.paymentV
 
     @Override
     public int getItemCount() {
-
         return act_id.size();
     }
 
