@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Testing</string>
+    <string name="addexercises">AddExercises</string>
+    <string name="delete" >Delete</string>
+</resources>
