@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="114dp"
         android:gravity="center"
-        android:text="Subscriptions"
+        android:text="Subscription"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -21,7 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+//logo eka add karanna
+    //credit eka ain karanna
     <TextView
         android:id="@+id/creditOrDebit"
         android:layout_width="wrap_content"
@@ -88,7 +89,7 @@
         />
 
     <EditText
-        android:id="@+id/ff"
+        android:id="@+id/cardNo"
         android:layout_width="354dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView5"
@@ -109,7 +110,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ff"
+        android:layout_below="@id/cardNo"
         android:layout_marginTop="0dp"
         android:paddingLeft="25dp"
         android:text="Expiry date"
@@ -119,7 +120,7 @@
         />
 
     <EditText
-        android:id="@+id/dd"
+        android:id="@+id/month"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/expire"
@@ -137,7 +138,7 @@
         android:textSize="15dp" />
 
     <EditText
-        android:id="@+id/ss"
+        android:id="@+id/year"
         android:layout_width="162dp"
         android:layout_height="47dp"
         android:layout_below="@id/expire"
@@ -154,14 +155,14 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dd"
+        android:layout_below="@id/month"
         android:paddingLeft="25dp"
         android:text="Security code"
         android:textSize="16dp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/qq"
+        android:id="@+id/SC"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView9"
@@ -181,7 +182,7 @@
         android:id="@+id/textView11"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/qq"
+        android:layout_below="@id/SC"
         android:layout_marginTop="17dp"
         android:text="Olexo will make a temporary authorization on your card to verify it.This is an Authorization only and NOT a change. Your bank may inform you if the authorization."
         android:textStyle="bold"
@@ -190,7 +191,7 @@
         />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/cardbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView11"
@@ -203,7 +204,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sri Lanka"
-        android:layout_below="@id/button2"
+        android:layout_below="@id/cardbtn"
         android:textSize="12dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="139dp"
@@ -216,7 +217,7 @@
         android:layout_height="wrap_content"
         android:text="Change country"
         android:textStyle="bold"
-        android:layout_below="@id/button2"
+        android:layout_below="@id/cardbtn"
         android:textSize="12dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="200dp"
@@ -239,7 +240,7 @@
         android:id="@+id/imageView11"
         android:layout_width="32dp"
         android:layout_height="20dp"
-        android:layout_below="@id/dd"
+        android:layout_below="@id/month"
         android:layout_marginLeft="130dp"
         app:srcCompat="@drawable/question"
 
